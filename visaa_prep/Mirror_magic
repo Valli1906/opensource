@@ -1,0 +1,10 @@
+n=int(input())
+mat=[]
+for i in range(n):
+    r=list(map(int,input().split()))
+    mat.append(r)
+mirror=[]
+for row in mat:
+    mirror.append(row[::-1])
+for row in mirror:
+    print(" ".join(map(str,row)))
